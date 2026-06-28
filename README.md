@@ -9,9 +9,11 @@ This is the official repository for the following paper:
 
 CareCom is an extension of [ObjectStitch](https://github.com/bcmi/ObjectStitch-Image-Composition) to support multiple reference images of one foreground object. Generally, more reference images could lead to better results. 
 
-We release the pretrained model for CareCom, which can achieve good results for common or simple objects. However, the pretrained model is weak in keeping the object identity for the objects with rich details. If you have a few images containing the foreground object, we suggest finetuning CareCom using these images, which can greatly promote the detail preservation. 
+We release the pretrained model for CareCom, which can achieve good results for common or simple objects. However, the pretrained model is weak in keeping the object identity for the objects with rich details. If you have a few images containing the foreground object, we suggest finetuning CareCom using these images, which can greatly promote the detail preservation. We have also extended [ObjectStitch](https://github.com/bcmi/ObjectStitch-Image-Composition) to [OSInsert](https://github.com/bcmi/OSInsert-Image-Composition), which can achieve both high-fidelity (keep the appearance details of reference image) and high-authenticity (adjust foreground pose/viewpoint according to the background) without object-specific finetuning. 
 
 **Note that in the reference images, the foreground object's length and width should fully extend to the edges of the image (see our example), otherwise the performance would be severely affected.**
+
+
 
 <p align='center'>  
   <img src='./figs/multiple_foreground_images.jpg.jpg'  width=75% />
